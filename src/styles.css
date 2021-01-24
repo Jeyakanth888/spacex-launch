@@ -86,7 +86,10 @@
     box-sizing: border-box; 
   }
   .filter-section {
-    top: 35px;
+    top: 40px;
+  }
+  .title {
+    font-size:22px;
   }
   .tiles-row {
     display:block;
