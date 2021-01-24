@@ -1,0 +1,18 @@
+<div class="card-panel filter disabled" #filterPanel>
+    <h3 class="title">Filters</h3>
+    <h5>Launch Year</h5>
+    <div class="btns-row" #yearsBtns>
+        <button type="button" class="btn btn-green" *ngFor="let year of filterYears"
+            (click)="onClickFilter($event,year, 'year')">{{year}}</button>
+    </div>
+    <h5>Successful Launch</h5>
+    <div class="btns-row" #launchBtns>
+        <button type="button" class="btn btn-green" *ngFor="let btnType of filterBtns"
+            (click)="onClickFilter($event,btnType.val, 'launch')">{{btnType.text}}</button>
+    </div>
+    <h5>Successful Landing</h5>
+    <div class="btns-row" #landingBtns>
+        <button type="button" class="btn btn-green" *ngFor="let btnType of filterBtns"
+            (click)="onClickFilter($event,btnType.val, 'land')">{{btnType.text}}</button>
+    </div>
+</div>

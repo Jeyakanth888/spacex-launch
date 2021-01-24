@@ -1,0 +1,43 @@
+.btns-row button.btn-green {
+    width:40%;
+    margin:7px 0;
+    color: #333;
+    background-color:#04a20454;
+    height:32px;
+    border-radius:2px;
+    border:none;
+    cursor:pointer;
+}
+
+.btns-row {
+    margin-bottom:10px;
+}
+
+.btns-row .btn:nth-child(odd) {
+    margin-left:0 !important;
+    margin-right:10%;
+}
+
+.btns-row .btn:nth-child(even) {
+    margin-right:0 !important;
+    margin-left:10%;
+}
+
+.btn.active {
+   background-color: #038403fa !important;
+   color:#fff !important;
+}
+
+.filter h5 {
+    width: 80%;
+    margin: 0 10%;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 2px solid #ddd;
+    padding: 0px 5px 2px;
+}
+
+.disabled {
+    pointer-events:none !important;
+    opacity:0.5;
+}

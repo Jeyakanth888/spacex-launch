@@ -1,0 +1,22 @@
+<div class="card-panel">
+    <div class="img-section">
+        <img [src]="imgPath" alt="space image" class="space-img" />
+    </div>
+    <div class="card-body">
+        <h3 class="title">{{launchDetails.mission_name}} #{{launchDetails.flight_number}}</h3>
+        <div class="card-description">
+            <h5> <span class="text-head">
+                    Mission Ids :
+                </span> </h5>
+            <ul *ngIf="missionIds.length>0" class="mission-id-lists">
+                <li *ngFor="let mid of missionIds">{{mid}}</li>
+            </ul>
+            <h5> <span class="text-head">Launch Year : </span> <span
+                    class="text-desc">{{launchDetails.launch_year}}</span></h5>
+            <h5><span class="text-head">Successful Launch :</span> <span
+                    class="text-desc">{{launchDetails.launch_success}}</span></h5>
+            <h5><span class="text-head">Successful Landing : </span> <span class="text-desc"> {{landSuccess}}</span>
+            </h5>
+        </div>
+    </div>
+</div>

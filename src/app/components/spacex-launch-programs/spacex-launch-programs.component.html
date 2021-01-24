@@ -1,0 +1,12 @@
+<div class="content">
+    <app-spacex-filters class="filter-section" [filterYears]="launchedYears" (filtered)="getSelectedInFilters($event)">
+    </app-spacex-filters>
+    <div class="tiles-row">
+        <app-tile-card class="spacex-details-card" *ngFor="let data of launchSpaceRecords" [launchDetails]="data">
+        </app-tile-card>
+    </div>
+    <div class="no-records" *ngIf="launchSpaceRecords.length===0 && !showLoader">
+        <h4>{{showMessage}}</h4>
+    </div>
+</div>
+<div class="loader-image" *ngIf="showLoader"></div>

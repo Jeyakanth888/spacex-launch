@@ -1,0 +1,27 @@
+
+  .loader-image:before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top:-25px;
+    margin-left:-25px;
+    background:url('/assets/images/loader.gif');
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+  }
+
+  .no-records {
+      width:100%;
+      text-align: center;
+      margin:15% 0;
+      font-size:20px !important;
+  }
+
+  .scroll-viewport {
+      height:84vh;
+  }
+
+

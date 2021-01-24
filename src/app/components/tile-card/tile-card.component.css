@@ -1,0 +1,31 @@
+.img-section {
+    height:180px;
+    background-color: #ddd;
+    text-align:center;
+    padding:3px;
+    box-sizing: border-box;
+}
+
+.space-img {
+    width:175px;
+    height:175px;
+    vertical-align: middle;
+}
+
+.title {
+    color:#2753f3ed;
+    margin: 10px 0px 10px;
+}
+
+.mission-id-lists {
+    margin:0px !important;
+}
+
+h5 .text-head {
+    font-weight:bold;
+}
+
+h5 .text-desc {
+    font-weight:600;
+    color:#5d5c5c;
+}
